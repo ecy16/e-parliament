@@ -1,0 +1,89 @@
+
+.voting-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  border-radius: 5px;
+
+}
+
+.voting-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 15px;
+}
+
+.voting-header h1 {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.voting-header svg {
+  font-size: 1.5em;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.voting-container p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.voting-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-group {
+  display:block;
+  cursor: pointer;
+  
+
+}
+
+
+ h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+
+}
+
+.voting-container h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+
+}
+li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.votes-count{
+  display: flex;
+}
+
+.voting-container span {
+  font-size: 1rem;
+  color: blue;
+}
+
+.voting-container button:first-of-type svg {
+  margin-right: 5px;
+}
+.right-side{
+  display: flex;
+  float: right;
+}

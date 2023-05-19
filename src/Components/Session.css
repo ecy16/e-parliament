@@ -1,0 +1,28 @@
+
+
+label{
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgb(31, 31, 32);
+}
+button{
+  padding: 10px 24px;
+  border-radius: 4px;
+  display: flex;
+  text-align: center;
+  margin: auto;
+}
+.form-session{
+  margin: 0 auto;
+  background-color: rgb(205, 205, 209);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  border-radius: 5px;
+}
+ 
+  
