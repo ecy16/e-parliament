@@ -57,6 +57,8 @@ function AgendaManager() {
           <option>Session 1</option>
           <option>Session 2</option>
           <option>Session 3</option>
+          <option>Session 4</option>
+
         </select>
         <input type="submit"
           value="Add Agenda" />
