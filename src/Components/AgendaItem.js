@@ -36,6 +36,26 @@ function AgendaManager() {
     setAgenda([...agendas, newItem]);
   }
 
+  const options = [
+    {
+      title:"option",
+    description:"Session 1",
+},
+{
+  title:"option",
+description:"Session 2",
+},
+{
+  title:"option",
+description:"Session 3",
+},
+{
+  title:"option",
+description:"Session 4",
+},
+    
+  ]
+
   console.log("agendas", agendas)
   return (
     <div className='agenda-form'>
@@ -53,13 +73,17 @@ function AgendaManager() {
           name='description'
           onChange={(e) => setDescription(e.target.value)}
         />
-        <select>
+
+
+       { /*<select>
           <option>Session 1</option>
           <option>Session 2</option>
           <option>Session 3</option>
           <option>Session 4</option>
 
         </select>
+  */}
+        
         <input type="submit"
           value="Add Agenda" />
 

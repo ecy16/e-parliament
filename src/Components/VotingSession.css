@@ -47,7 +47,6 @@
 .btn-group {
   display:block;
   cursor: pointer;
-  
 
 }
 
@@ -87,3 +86,4 @@ li{
   display: flex;
   float: right;
 }
+

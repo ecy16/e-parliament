@@ -53,37 +53,38 @@ const VotingSession = ({ agenda }) => {
         <FontAwesomeIcon icon={faQuestion} />
       </div>
       <section>
-        <vl/>
-      <p>Which strategy should we implement?</p>
-      <div className='right-side'>
-      <p>Tap a Voters name to input their vote.</p>
-      <h4>Voters</h4>
-      </div>
-      <div className='btn'>
-        <button onClick={() => this.startVotingSession()}>Start Voting Session</button>
+        <vl />
+        <p>Which strategy should we implement?</p>
+        <div className='right-side'>
+          <p>Tap a Voters name to input their vote.</p>
+          <h4>Voters</h4>
+        </div>
+        <div className='btn'>
+          <button onClick={() => this.startVotingSession()}>Start Voting Session</button>
           {agenda && agenda.map((item, index) => (
             <li key={index}>{item.title}</li>
           ))}
-        <button onClick={() => this.endVotingSession()} >End Voting Session</button>
+          <button onClick={() => this.endVotingSession()} >End Voting Session</button>
         </div>
-        
-      <h2>My vote</h2> 
-      <span>Add notes</span>
 
-       <button className='yes'> Yes<FontAwesomeIcon icon={faCheck}/></button>
-      <button className='no'>No <FontAwesomeIcon icon={faTimes}/></button>
-      <button className='abstain'>Abstain <FontAwesomeIcon icon={faCircle}/></button>
-      <div className='votes-count'>
-      <h3>Vote Results</h3>
-      <ul>
-        <li><FontAwesomeIcon icon={faCheck}/>Yes:0</li>
-        <li> <FontAwesomeIcon icon={faTimes}/>No:0</li>
-        <li> <FontAwesomeIcon icon={faCircle}/>Abstain:0</li>
-        <li>Pending:6</li>
-      </ul>
-      </div>
+        <h2>My vote</h2>
+        <span>Add notes</span>
+        <div className='btn-group'>
+          <button className='yes'> Yes<FontAwesomeIcon icon={faCheck} /></button>
+          <button className='no'>No <FontAwesomeIcon icon={faTimes} /></button>
+          <button className='abstain'>Abstain <FontAwesomeIcon icon={faCircle} /></button>
+        </div>
+        <div className='votes-count'>
+          <h3>Vote Results</h3>
+          <ul>
+            <li><FontAwesomeIcon icon={faCheck} />Yes:0</li>
+            <li> <FontAwesomeIcon icon={faTimes} />No:0</li>
+            <li> <FontAwesomeIcon icon={faCircle} />Abstain:0</li>
+            <li>Pending:6</li>
+          </ul>
+        </div>
       </section>
-      
+
 
     </div>
   );

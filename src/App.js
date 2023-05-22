@@ -12,7 +12,6 @@ import AgendaList from './Components/AgendaList';
 import BoardPage from './Components/Board';
 import VotingSession from './Components/VotingSession';
 
-
 export function App() {
   return (
     <div>
@@ -25,6 +24,8 @@ export function App() {
           <Route path="/agendalist" element={<AgendaList />} />
           <Route path="/DashBoard" element={<Dashboard />} />
           <Route path="/VotingSession" element={<VotingSession/>} />
+          
+          
           
           
         </Routes>
