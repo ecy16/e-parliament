@@ -1,0 +1,57 @@
+.agenda-management-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .agenda-management-container h2 {
+    text-align: center;
+  }
+  
+  .agenda-management-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .agenda-management-container label {
+    margin-bottom: 10px;
+  }
+  
+  .agenda-management-container input[type='text'] {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .agenda-management-container button {
+    padding: 8px;
+    border-radius: 4px;
+    background-color:rgb(123, 190, 216);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .agenda-management-container button[type='button'] {
+    margin-top: 5px;
+    background-color:blue;
+  }
+  
+  .agenda-management-container button:hover {
+    background-color: blue;
+  }
+  
+  .agenda-topic-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .agenda-topic-container input[type='text'] {
+    margin-right: 10px;
+  }
+  

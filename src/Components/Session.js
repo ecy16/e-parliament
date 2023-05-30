@@ -2,6 +2,8 @@
 import './Session.css';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faCalendarDay, faClock, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
 
 function Session() {
@@ -18,17 +20,20 @@ function Session() {
       <div className='session-form-body'>
 
       <h1>Session Details</h1>
-      <label>Date:
+      <label>Date<FontAwesomeIcon icon={faCalendarDay}/>
         <input type="text" value={date} onChange={(e) => setDate(e.target.value)} />
       </label>
-      <label>Time:
+      <label>Time<FontAwesomeIcon icon={faClock}/>
         <input type="text" value={time} onChange={(e) => setTime(e.target.value)} />
       </label>
-      <label>Location:
+      <label>Location<FontAwesomeIcon icon={faLocationPin}/>
         <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
       </label>
       <button>
-        <Link to="/AgendaItem">AgendaItem</Link>
+        <Link to="/AgendaItem">ADD session</Link>
+      </button>
+      <button>
+        <Link to="/AgendaManagement">ADD session</Link>
       </button>
       </div>
     </div>

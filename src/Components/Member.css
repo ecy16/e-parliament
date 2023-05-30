@@ -1,11 +1,10 @@
 
 
-
 .member-container {
   max-width: auto;
   margin: 0 auto;
   padding: 16px;
-  background-color: rgb(79, 79, 143);
+  background-color: #247091; 
   color: white;
   display: flex;
   flex-direction: column;
@@ -28,14 +27,6 @@ input {
   border: none;
 }
 
-button {
-  background-color: rgb(3, 3, 56);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
 
 button[type="submit"] {
   background-color: rgb(3, 3, 56);
@@ -48,7 +39,7 @@ h1, h2, h3 {
   justify-content: center;
 }
 .member-form-body {
-  background-color: rgba(223, 215, 215, 0.1);
+  background-color: rgba(133, 34, 34, 0.1);
   padding: 16px;
   border-radius: 10px;
   margin-bottom: 16px;

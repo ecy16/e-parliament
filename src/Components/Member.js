@@ -1,5 +1,6 @@
 
 import './Member.css';
+import { Link } from "react-router-dom";
 
 import React, { useState } from "react";
 
@@ -21,7 +22,12 @@ function MemberManagement() {
   return (
     <div className='member-container'>
       <div className='member-form-body'>
-        <h1>Member Management</h1>
+        <h1>REGISTRATION</h1>
+        <span>
+          <h2>
+            <Link to="/LoginPage">Login</Link>
+          </h2>
+        </span>
         <form onSubmit={handleAddMember}>
           <label>
             Name:
@@ -62,10 +68,10 @@ function MemberManagement() {
               onChange={handleInputChange}
             />
           </label>
-          <label>
-            <button type='add'>Biometric ID</button>
-          </label>
-          <button type="submit">Add Member</button>
+
+
+          <button type="submit">Register</button>
+
 
         </form>
         <h2></h2>

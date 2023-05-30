@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faTasks, faSearch, faClock, faCloudSun, faCalendarDay, faSun, faSuitcase } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faTasks, faSearch, faClock, faCloudSun, faCalendarDay, faSun, faSuitcase, faScaleBalanced, faCheckSquare, faFileText, faTv, faArchive } from "@fortawesome/free-solid-svg-icons";
 import "./Homepage.css";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
@@ -73,28 +73,58 @@ export function HomePage() {
           <li>
             <Link to="/members">
               <FontAwesomeIcon icon={faUsers} />
-              <span>Members</span>
+              <span>User Authentication</span>
             </Link>
           </li>
           <li>
             <Link to="/session">
               <FontAwesomeIcon icon={faClock} />
-              <span>HouseBusiness</span>
+              <span>Agenda Management</span>
             </Link>
           </li>
           <li>
-            <Link to="/committee">
+            <Link to="/Document">
               <FontAwesomeIcon icon={faSuitcase} />
-              <span>committee</span>
+              <span>Document Management</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/MeetingPreparation">
+              <FontAwesomeIcon icon={faTasks} />
+              <span>Meeting Preparation</span>
             </Link>
           </li>
           <li>
             <Link to="/Board">
-              <FontAwesomeIcon icon={faTasks} />
-              <span>Board</span>
+              <FontAwesomeIcon icon={faScaleBalanced} />
+              <span>Real Time Debates and Discussions</span>
             </Link>
-          </li>
-        </ul>
+            </li>
+            <li>
+            <Link to="/Board">
+              <FontAwesomeIcon icon={faCheckSquare} />
+              <span>Voting and polling</span>
+            </Link>
+            <li>
+              </li>
+            <Link to="/Board">
+              <FontAwesomeIcon icon={faFileText} />
+              <span>Transcript Genereation</span>
+            </Link>
+            <li>
+              </li>
+            <Link to="/Board">
+              <FontAwesomeIcon icon={faTv} />
+              <span>Collaboration and Communication</span>
+            </Link>
+            </li>
+            <li>
+            <Link to="/Board">
+              <FontAwesomeIcon icon={faArchive} />
+              <span>Archiving and Retrival</span>
+            </Link>
+            </li>
+          </ul>
       </nav>
 
       <div className="content">
