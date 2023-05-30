@@ -12,6 +12,10 @@ button{
   display: flex;
   text-align: center;
   margin: auto;
+  
+}
+.additem{
+  display: flex;
 }
 .form-session{
   margin: 0 auto;

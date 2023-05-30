@@ -9,11 +9,11 @@ import Session from './Components/Session';
 import AgendaItem from './Components/AgendaItem';
 import AgendaManagement from './Components/AgendaManagement';
 import Document from './Components/Document';
-import MeetingPreparation from './Components/MeetingPreparation';
-import Dashboard from './Components/DashBoard';
 import HomePage from './Components/Homepage';
 import AgendaList from './Components/AgendaList';
+import MeetingPreparation from './Components/MeetinPreparation';
 import BoardPage from './Components/Board';
+import Debate from './Components/Debate';
 import VotingSession from './Components/VotingSession';
 
 export function App() {
@@ -30,8 +30,10 @@ export function App() {
           <Route path="/agendamanagement" element={<AgendaManagement />} />
           <Route path="/Document" element={<Document />} />
           <Route path="/MeetingPreparation" element={<MeetingPreparation />} />
-          <Route path="/DashBoard" element={<Dashboard />} />
+          <Route path="/Debate" element={<Debate/>} />
           <Route path="/VotingSession" element={<VotingSession/>} />
+          
+
           
           
           

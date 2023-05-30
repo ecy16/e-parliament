@@ -29,11 +29,11 @@ function Session() {
       <label>Location<FontAwesomeIcon icon={faLocationPin}/>
         <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
       </label>
-      <button>
+      <button className='additem'>
         <Link to="/AgendaItem">ADD session</Link>
       </button>
-      <button>
-        <Link to="/AgendaManagement">ADD session</Link>
+      <button className='agenda'>
+        <Link to="/AgendaManagement">AGENDA</Link>
       </button>
       </div>
     </div>

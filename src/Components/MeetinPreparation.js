@@ -5,11 +5,11 @@ const MeetingPreparation = () => {
   const [agenda, setAgenda] = useState('');
   const [documents, setDocuments] = useState([]);
 
-  const handleAgendaChange = (event) => {
+  const setAgendaHandler = (event) => {
     setAgenda(event.target.value);
   };
 
-  const handleDocumentChange = (event) => {
+  const addDocumentHandler = (event) => {
     const file = event.target.files[0];
     const reader = new FileReader();
     reader.onload = () => {
@@ -23,20 +23,15 @@ const MeetingPreparation = () => {
   };
 
   return (
-    <div className="meeting-preparation">
-      <h1>Meeting Preparation</h1>
+    <div className="meeting-preparation-module">
+      <h1>Meeting Preparation Module</h1>
       <div className="agenda">
         <h2>Agenda:</h2>
-        <textarea
-          value={agenda}
-          onChange={handleAgendaChange}
-          rows={4}
-          cols={50}
-        />
+        <textarea value={agenda} onChange={setAgendaHandler} rows={4} cols={50} />
       </div>
       <div className="documents">
         <h2>Documents:</h2>
-        <input type="file" onChange={handleDocumentChange} />
+        <input type="file" onChange={addDocumentHandler} />
         <ul>
           {documents.map((document, index) => (
             <li key={index}>

@@ -95,7 +95,7 @@ export function HomePage() {
             </Link>
           </li>
           <li>
-            <Link to="/Board">
+            <Link to="/Debate">
               <FontAwesomeIcon icon={faScaleBalanced} />
               <span>Real Time Debates and Discussions</span>
             </Link>
