@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from 'react';
 import Header from './Components/Header';
+import Button from './Components/Button';
 import LoginPage from './Components/LoginPage';
 import Member from './Components/Member';
 import Session from './Components/Session';
@@ -15,6 +16,11 @@ import MeetingPreparation from './Components/MeetinPreparation';
 import BoardPage from './Components/Board';
 import Debate from './Components/Debate';
 import VotingSession from './Components/VotingSession';
+import VotingAndPolling from './Components/VotingAndPolling';
+import TranscriptGeneration from './Components/TranscriptGeneration';
+import CollaborationAndCommunication from './Components/CollaborationAndCommunication';
+import RoleBasedAccessControl from './Components/RoleBasedAccessControl';
+import ArchivingAndRetrieval from './Components/ArchivingAndRetrieval';
 
 export function App() {
   return (
@@ -32,6 +38,15 @@ export function App() {
           <Route path="/MeetingPreparation" element={<MeetingPreparation />} />
           <Route path="/Debate" element={<Debate/>} />
           <Route path="/VotingSession" element={<VotingSession/>} />
+          <Route path="/VotingAndPolling" element={<VotingAndPolling/>} />
+          <Route path="/TranscriptGeneration" element={<TranscriptGeneration/>} />
+          <Route path="/CollaborationAndCommunication" element={<CollaborationAndCommunication/>} />
+          <Route path="/RoleBasedAccessControl" element={<RoleBasedAccessControl/>}/>
+          <Route path="/ArchivingAndRetrival" element={<ArchivingAndRetrieval/>}/>
+
+
+
+
           
 
           

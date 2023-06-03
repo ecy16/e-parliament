@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUsers, faTasks, faSearch, faClock, faCloudSun, faCalendarDay, faSun, faSuitcase, faScaleBalanced, faCheckSquare, faFileText, faTv, faArchive } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faTasks, faSearch, faClock, faCloudSun, faCalendarDay, faSun, faSuitcase, faScaleBalanced, faCheckSquare, faFileText, faTv, faArchive, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import "./Homepage.css";
 import { useNavigate } from "react-router-dom";
 import Header from "./Header";
@@ -101,27 +101,33 @@ export function HomePage() {
             </Link>
             </li>
             <li>
-            <Link to="/Board">
+            <Link to="/VotingAndPolling">
               <FontAwesomeIcon icon={faCheckSquare} />
               <span>Voting and polling</span>
             </Link>
             <li>
               </li>
-            <Link to="/Board">
+            <Link to="/TranscriptGeneration">
               <FontAwesomeIcon icon={faFileText} />
               <span>Transcript Genereation</span>
             </Link>
             <li>
               </li>
-            <Link to="/Board">
+            <Link to="/collaborationAndCommunication">
               <FontAwesomeIcon icon={faTv} />
               <span>Collaboration and Communication</span>
             </Link>
             </li>
             <li>
-            <Link to="/Board">
+            <Link to="/RoleBasedAccessControl">
+              <FontAwesomeIcon icon={faUserAlt} />
+              <span>RoleBasedAccessControl</span>
+            </Link>
+            </li>
+            <li>
+            <Link to="/ArchivingAndRetrieval">
               <FontAwesomeIcon icon={faArchive} />
-              <span>Archiving and Retrival</span>
+              <span>Archiving And Retrieval</span>
             </Link>
             </li>
           </ul>

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Document.css';
+import Button from './Button';
+
 
 const Document = ({ title, content, category }) => {
   const [newContent, setNewContent] = useState(content);
@@ -15,7 +17,7 @@ const Document = ({ title, content, category }) => {
 
   return (
     <div className="document">
-      <h1 className="document-title">{title}</h1>
+      <h1 className="document-title">{title} Document Module</h1>
       <p className="document-category">Category: {category}</p>
       <div className="document-content">
         <h2>Content:</h2>
@@ -30,6 +32,8 @@ const Document = ({ title, content, category }) => {
           cols={50}
         />
         <button onClick={updateContent}>Save</button>
+        <Button onClick={() => this.handleClick()} title="Delete"/>
+
       </div>
     </div>
   );

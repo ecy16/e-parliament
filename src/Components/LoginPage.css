@@ -1,11 +1,9 @@
 .login-container {
-  width: 300px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #509fbe;
-  height: 500px;
+  background-color: rgb(179, 179, 241);
 }
 
 .login-container h2 {

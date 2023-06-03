@@ -68,6 +68,15 @@ function MemberManagement() {
               onChange={handleInputChange}
             />
           </label>
+          <label>
+            Password
+            <input
+              type="text"
+              name="password"
+              value={newMember.contact || ""}
+              onChange={handleInputChange}
+            />
+          </label>
 <label>
  
 </label>

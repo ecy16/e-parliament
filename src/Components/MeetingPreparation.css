@@ -1,9 +1,9 @@
-.meeting-preparation {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+.meeting-preparation-module {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(179, 179, 241);
   }
   
   .agenda textarea {
